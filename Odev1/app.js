@@ -5,9 +5,6 @@
 //         const { data: userId } = await axios("https://jsonplaceholder.typicode.com/users/" + Number);
 //         const { data: posts } = await axios("https://jsonplaceholder.typicode.com/posts/" + Number);
 
-// userId.post = new Array();
-// userId.post.push(posts)
-
 //         return { userId, posts };
 
 //     } catch (e) {
@@ -24,14 +21,22 @@
 import axios from "axios";
 
 const getData = async (Number) => {
-    return new Promise (async(resolve, reject)=>{
-        const { data: userId } = await axios("https://jsonplaceholder.typicode.com/users/" + Number);
-         const { data: posts } = await axios("https://jsonplaceholder.typicode.com/posts/" + Number);
 
-         userId.post = new Array()
-         userId.post.push(posts)
 
-         resolve(userId);
+    return new Promise(async (resolve, reject) => {
+
+        if (typeof Number === "number") {
+
+            const { data: userId } = await axios("https://jsonplaceholder.typicode.com/users/" + Number);
+            const { data: posts } = await axios("https://jsonplaceholder.typicode.com/posts/" + Number);
+
+            userId.post = new Array()
+            userId.post.push(posts)
+
+            resolve(userId);
+        } else {
+            reject("Sayi girin.")
+        }
     })
 }
 
