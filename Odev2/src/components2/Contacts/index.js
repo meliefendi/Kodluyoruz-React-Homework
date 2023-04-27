@@ -8,7 +8,7 @@ function Contacts(){
 const [contacts, setContacts] = useState([])
 const [situation, setSituation] = useState("All")
 
-
+//tüm bileşenleri contacts bileşeninde topluyoruz  ve buradan da App bileşenine export ediyoruz.
 
     return(
 <>
