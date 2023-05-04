@@ -1,0 +1,40 @@
+  .apiWeather {
+    /*  */
+    color: white;
+    font-weight: bold;
+    
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contacts {
+
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  /*.apiWeather {
+    background-color: rgb(200, 200, 200); /* Fallback color */
+   /* background-color: rgba(200, 200, 200, 0.6); /* Black w/opacity/see-through */
+    /*font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;/*
+    font-weight: bold;
+    border: 1px solid #333;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+  }
