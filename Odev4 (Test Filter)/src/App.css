@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header .search-input {
+  width: 400px;
+  height: 35px;
+  margin: 15px auto 0 auto;
+  border: 1px solid #ecf0f1;
+  border-radius: 7px;
+  text-indent: 10px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.emoji-result {
+  margin-top: 20px;
+  
+}
+
+.emoji-result .emoji-list {
+  list-style-type: none;
+  background-color: #2a3035;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 1px;
+  padding: 10px 0 10px 10px;
+  width: 500px;
+  height: auto;
+}
+
+.emoji-list .title {
+  margin-left: 20px;
+}
+
+.emoji-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emoji-list li .copy {
+  font-size: 14px;
+  margin-right: 20px;
+  cursor: pointer;
+}
